@@ -48,11 +48,13 @@ public class Reserva {
         this.duracionHoras = duracionHoras;
     }
 
-    public void mostrarInfo() {
-        System.out.println("Informacion de la reserva");
-        System.out.println("id: "+ idReserva);
-        System.out.println("nombre: "+ cliente);
-        System.out.println("fecha: "+ fecha);
-        System.out.println("duracion: "+ duracionHoras);
+    @Override
+    public String toString() {
+        return "Reserva{" +
+                "idReserva=" + idReserva +
+                ", cliente='" + cliente + '\'' +
+                ", fecha='" + fecha + '\'' +
+                ", duracionHoras=" + duracionHoras +
+                '}';
     }
 }
